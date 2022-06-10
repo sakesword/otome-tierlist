@@ -8,14 +8,11 @@
 	<link href="styles/newstyle.css" rel="stylesheet">
 	<link href="styles/nav.css" rel="stylesheet">
 	<link href="styles/dragula.min.css" rel="stylesheet">
-	<meta name="google-site-verification" content="mhlxk9_OOcyed8If_JjdkOZv6GmGPYfSnbsafwWmRC4" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:creator" content="@vernie_dk" />
-	<meta property='og:image' content='https://fe-tier-list-maker.github.io/img/preview_image.png'/>
-	<meta property='og:url' content='https://fe-tier-list-maker.github.io/'/>
-	<meta property='og:title' content='FE Tier List Maker'/>
-	<meta property='og:description' content='Tier list maker for every character in the Fire Emblem series. Filter by game, class, and other categories all at once.' />
-	<meta name="keywords" content="Fire Emblem,Tier List,Three Houses,FE,Awakening,Fates,All Characters">
+	<meta property='og:image' content='https://sakesword.github.io/otome-tierlist/img/preview_image.png'/>
+	<meta property='og:url' content='https://sakesword.github.io/otome-tierlist'/>
+	<meta property='og:title' content='OtomeTier List Maker'/>
+	<meta property='og:description' content='Otome list maker for many characters. Filter by game!' />
+	<meta name="keywords" content="Otome, Tier List,All Characters">
 	<meta name="viewport" content="user-scalable=no">
 </head>
 <body>
@@ -42,16 +39,6 @@
 			<div class="nav-toggle-bar"></div>
 		</div>	
 		<h1 id="titleHeading"><span>neat</span> TIER LIST MAKER</h1>
-		<!--
-		<div id="buttons">
-			<button id="dock">Dock tier list</button>
-			<button id="hidebuttons">Hide controls</button>
-			<button id="characters">Change characters</button>
-			<button id="help">Help</button>
-			<button id="save">Save/Load</button>
-			<button id="reset">Reset</button>
-		</div>
-		-->
 	</div>
 	
 	<div id="tablewrap"><table id="tablemain"><tbody>
@@ -123,19 +110,7 @@
 			<div id="helpMenu" class="popupMenu">
 				<h1>HELP</h1>
 				<span id="close"></span>
-				<p>Also check out the <a href ="https://fe-tier-list-maker.github.io/home">other tools</a>, including a game tier list maker and graph maker!</p>
-				<p>For any issues, add it to the list on the repository page or message me on <a href ="https://twitter.com/vernie_dk">Twitter</a> or elsewhere.</p>
-				<p>You can click and drag characters into the list or double-click to instantly move them to the highest tier.</p>
-				<p>Clicking on the "Dock tier list" button will <strong>stick the tier list to the top of the window.</strong>
-				This can be useful if you have a large number of characters on-screen and don't want to scroll up and down
-				as you drag them into your list. Clicking the button again will return the list to its original position.</p>
-				<p>You can take a screenshot or generate code to load your current list later in the "Save/Load" tab.</p>
-				<p>There is a gear next to each tier in the tierlist. If you click on it, you can <strong>change the color of the tier label, add rows, delete the row, or remove all of the characters currently in the row.</strong></p>
-				<p>Next to the gear are two arrows which will let you <strong>move a tier up and down a level</strong>.</p>
-				<p><strong>You can change the name of the tier</strong> by clicking on the tier label and typing in there. If this doesn't work, you can change or reset it in the tier's settings menu (the gear).</p>
-				<p>If you want to <strong>completely start over</strong>, refresh the page or click the "Reset" button at the top of the page.</a>
-				<p>Source code can be found <a href ="https://github.com/fe-tier-list-maker/fe-tier-list-maker.github.io">here</a> and was forked from <a href ="https://github.com/quetzle/smash-apps">here</a>.</p>
-				<p>Information on image ownership can be found <a href = "https://github.com/fe-tier-list-maker/fe-tier-list-maker.github.io/blob/master/CREDITS.md">here</a>.</p>
+				<p>Forked from <a href ="https://fe-tier-list-maker.github.io/">https://fe-tier-list-maker.github.io/</a></p>
 			</div>
 			<div id="screenshotShow" class="popupMenu">
 				<h1>SAVE/LOAD</h1>
@@ -155,8 +130,6 @@
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-	<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>!-->
-	<!--<script src="allnames.js"></script>-->
 	<script src="lib/dragula.min.js"></script>
 	<script src="lib/html2canvas.min.js"></script>
 	<script src="lib/common.js"></script>
@@ -405,7 +378,7 @@
 			$("#checklist div:last-child").html("Select All: <input type='checkbox' class='selectAll' id='all' >");
 			
 			// 31 means Three Houses
-			$( ".characterCheck.game31" ).prop('checked', true).change();
+			$( ".characterCheck.game1" ).prop('checked', true).change();
 
 			$("h1 span").text(currentGame);
 			updateTiers();
