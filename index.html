@@ -100,7 +100,7 @@
 				<p><button id="addRowUp">Add row above</button> <button id="addRowBelow">Add row below</button></p>
 			</div>
 			<div id="charChange" class="popupMenu">
-				<h1>CHANGE CHARACTERS</h1>
+				<h1>CHANGE GAMES</h1>
 				<span id="close"></span>
 				<div id="checklist"><div></div></div>
 				<p><strong>Hiding a game will remove every character from that game from your tierlist!</strong> Do not click unless you are sure you want to change! You cannot undo this.</p>
@@ -369,8 +369,8 @@
 			$("#checklist div:last-child").after(selectAllWrap);
 			$("#checklist div:last-child").html("Select All: <input type='checkbox' class='selectAll' id='all' >");
 			
-			// 31 means Three Houses
-			$( ".characterCheck.game1" ).prop('checked', true).change();
+			$( ".characterCheck.game26" ).prop('checked', true).change();
+			$( ".characterCheck.game27" ).prop('checked', true).change();
 
 			$("h1 span").text(currentGame);
 			updateTiers();
